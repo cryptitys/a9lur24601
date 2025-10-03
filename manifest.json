@@ -1,0 +1,23 @@
+{
+    "manifest_version": 3,
+    "name": "Alura Destroyer",
+    "version": "1.0",
+    "description": "By iUnknownBr",
+    "permissions": [
+        "activeTab",
+        "scripting",
+        "storage"
+    ],
+    "host_permissions": [
+        "https://cursos.alura.com.br/*"
+    ],
+    "action": {
+        "default_popup": "popup.html"
+    },
+    "content_scripts": [
+        {
+            "matches": ["https://cursos.alura.com.br/*"],
+            "js": ["content.js"]
+        }
+    ]
+}
